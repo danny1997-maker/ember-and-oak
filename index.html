@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ember & Oak - Where Every Meal Becomes A Memory</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="component.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b0296c056d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+      <div class="headerContainer">
+        <a href="#"
+          ><img
+            class="headerLogo"
+            src="Icon/ChatGPT_Image_Jul_12__2026__03_27_50_PM-removebg-preview.png"
+            alt="Header Logo"
+            
+        /></a>
+
+        <button class="hamburger" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navLinks">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <a class="btn btn-primary" href="#">Reserve A Table</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="heroContainer">
+          <div class="heroContent">
+            <div class="heroBadge">
+              <p><i class="fa-solid fa-star"></i>Award Winning Restaurant</p>
+            </div>
+            <div class="heroTitle">
+              <h1>
+                Fire Kissed Flavor, <br />
+                Crafted With Passion
+              </h1>
+            </div>
+            <div class="heroDescription">
+              <p>
+                Experience unforgettable dining where every dish is prepared
+                with premium ingredients in a warm and elegant atmosphere.
+              </p>
+            </div>
+            <div class="heroBtn">
+              <a class="btn btn-primary" href="#">Reserve a Table</a>
+              <a class="btn btn-secondary" href="#">Explore Menu</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED SECTION -->
+      <section id="menu" class="featuredSection">
+        <div class="featuredContainer">
+          <div class="featuredTitle">
+            <h2>Featured Dishes</h2>
+          </div>
+          <div class="featuredDescription">
+            <p>Crafted with premium ingredients and fire-kissed perfection.</p>
+          </div>
+          <div class="featuredCards">
+            <div class="featuredCard">
+              <div class="dishImage">
+                <img
+                  src="Images/Grilled Ribeye.jpg"
+                  alt="Grilled Ribeye"
+                  loading="lazy"
+                />
+              </div>
+              <div class="cardContent">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half"></i>
+                </div>
+                <div class="dishName">
+                  <h4>Fire-Grilled Ribeye</h4>
+                </div>
+                <div class="dishDescription">
+                  <p>
+                    Premium Angus beef grilled over an open flame and served
+                    with roasted vegetables.
+                  </p>
+                </div>
+                <div class="dishFooter">
+                  <span>$42</span>
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="featuredCard">
+              <div class="dishImage">
+                <img
+                  src="Images/garlic butter lobster tail.jpg"
+                  alt="Lobster Tail"
+                  loading="lazy"
+                />
+              </div>
+              <div class="cardContent">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="dishName">
+                  <h4>Garlic Butter Lobster</h4>
+                </div>
+                <div class="dishDescription">
+                  <p>
+                    Fresh lobster tail finished in rich garlic butter with
+                    creamy mashed potatoes and seasonal herbs.
+                  </p>
+                </div>
+                <div class="dishFooter">
+                  <span>$42</span>
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="featuredCard">
+              <div class="dishImage">
+                <img
+                  src="Images/truffled mushroom pasta.jpg"
+                  alt="Mushroom Pasta"
+                  loading="lazy"
+                />
+              </div>
+              <div class="cardContent">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="dishName">
+                  <h4>Truffle Mushroom Pasta</h4>
+                </div>
+                <div class="dishDescription">
+                  <p>
+                    Fresh handmade pasta tossed with wild mushrooms, parmesan,
+                    and aromatic black truffle cream.
+                  </p>
+                </div>
+                <div class="dishFooter">
+                  <span>$34</span>
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="aboutSection">
+        <div class="aboutContainer">
+          <div class="aboutImage">
+            <div class="mainImage">
+              <img
+                src="Images/side-view-mushroom-frying-with-stove-fire-human-hand-pan.jpg"
+                alt="Chef seasoning a steak"
+                loading="lazy"
+              />
+            </div>
+            <div class="smallImage">
+              <img
+                src="Images/new-year-party-dinner-table-decorated.jpg"
+                alt="Decorated Dinner Table"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="aboutArea">
+            <div class="aboutTitle">
+              <h2>About Us</h2>
+            </div>
+            <div class="aboutSubTitle">
+              <h4>Crafting Unforgettable Dining Experiences Since 2010</h4>
+            </div>
+            <div class="aboutDescription">
+              <p>
+                At Ember & Oak, every meal is more than a dish—it's a
+                celebration of craftsmanship, fresh ingredients, and the
+                timeless art of open-fire cooking. From hand-selected local
+                produce to expertly aged cuts and carefully curated wines, every
+                detail is designed to create moments worth savoring.
+              </p>
+            </div>
+            <div class="aboutList">
+              <ul class="checkedItems">
+                <li>
+                  <i class="fa-solid fa-check"></i>Premium Locally Sourced
+                  Ingredients
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>Expert Chefs with Passion &
+                  Precision
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>Elegant Atmosphere &
+                  Exceptional Service
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>Signature Dishes Inspired by
+                  Tradition
+                </li>
+              </ul>
+            </div>
+            <div class="aboutBtn">
+              <a class="btn btn-primary" href="#">Discover Our Story</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY SECTION -->
+      <section id="gallery" class="gallerySection">
+        <div class="galleryContainer">
+          <div class="galleryContent">
+            <div class="galleryHeading">
+              <h3>Our Gallery</h3>
+            </div>
+            <div class="galleryDescription">
+              <p>
+                Every dish, every celebration, and every shared moment tells the
+                story of Ember & Oak. Explore the atmosphere, craftsmanship, and
+                unforgettable dining experiences that have made us a favorite
+                destination for families and friends.
+              </p>
+            </div>
+          </div>
+          <div class="galleryImages">
+            <div class="heroGallery">
+              <img
+                src="Images/Family Dining.avif"
+                alt="Family Dining"
+                loading="lazy"
+              />
+              <div class="overlay">
+                <div class="hoverTitle">
+                  <h4>Family Dining</h4>
+                </div>
+              </div>
+            </div>
+            <div class="galleryImage">
+              <img
+                src="Images/Steak image.avif"
+                alt="Steak"
+                loading="lazy"
+              />
+              <div class="galleryOverlay">
+                <div class="galleryTitle">
+                  <h4>Steak</h4>
+                </div>
+              </div>
+            </div>
+            <div class="galleryImage">
+              <img
+                src="Images/Chef cooking.avif"
+                alt="Chef Cooking"
+                loading="lazy"
+              />
+              <div class="galleryOverlay">
+                <div class="galleryTitle">
+                  <h4>Chef Cooking</h4>
+                </div>
+              </div>
+            </div>
+            <div class="galleryImage">
+              <img
+                src="Images/Cocktail.avif"
+                alt="Cocktail"
+                loading="lazy"
+              />
+              <div class="galleryOverlay">
+                <div class="galleryTitle">
+                  <h4>Cocktail</h4>
+                </div>
+              </div>
+            </div>
+            <div class="galleryImage">
+              <img
+                src="Images/Dessert.avif"
+                alt="Dessert"
+                loading="lazy"
+              />
+              <div class="galleryOverlay">
+                <div class="galleryTitle">
+                  <h4>Dessert</h4>
+                </div>
+              </div>
+            </div>
+            <div class="galleryImage">
+              <img
+                src="Images/life-style.avif"
+                alt="Grill"
+                loading="lazy"
+              />
+              <div class="galleryOverlay">
+                <div class="galleryTitle">
+                  <h4>Grill</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIAL SECTION -->
+      <section id="testimonial" class="testimonialSection">
+        <div class="testimonialContainer">
+          <div class="testimonialHeader">
+            <h3>Our Testimonials</h3>
+            <p>What our guests are saying</p>
+          </div>
+          <div class="testimonialCards">
+            <div class="testimonialTrack">
+              <div class="testimonialCard">
+                <div class="quoteLeft">
+                  <span><i class="fa-solid fa-quote-left"></i></span>
+                </div>
+                <div class="testimonialText">
+                  <p>
+                    Ember & Oak exceeded all my expectations. The food was
+                    flavorful and beautifully presented, the staff were
+                    attentive without being intrusive, and the atmosphere made
+                    the evening feel truly special. I left already planning my
+                    next visit — highly recommended!
+                  </p>
+                </div>
+                <div class="starReview">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="customerInfo">
+                  <div class="customerImage">
+                    <img
+                      src="Images/vince-veras-AJIqZDAUD7A-unsplash.avif"
+                      alt="Portrait of Angelina Rose"
+                    />
+                  </div>
+                  <div class="customerDetails">
+                    <p class="name">Angelina Rose</p>
+                    <p class="profession">Software Engineer</p>
+                  </div>
+                </div>
+                <div class="quoteRight">
+                  <i class="fa-solid fa-quote-right"></i>
+                </div>
+              </div>
+
+              <!-- TESTIMONIAL 2 -->
+              <div class="testimonialCard">
+                <div class="quoteLeft">
+                  <span><i class="fa-solid fa-quote-left"></i></span>
+                </div>
+                <div class="testimonialText">
+                  <p>
+                    Dining at Ember & Oak was an absolute delight. The staff
+                    made us feel at home from the moment we arrived, and every
+                    dish was crafted with care. The flavors were rich yet
+                    balanced, and the presentation was stunning. It’s rare to
+                    find a restaurant that combines such warmth with culinary
+                    excellence — Ember & Oak has truly mastered both.
+                  </p>
+                </div>
+                <div class="starReview">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="customerInfo">
+                  <div class="customerImage">
+                    <img
+                      src="Images/babak-eshaghian--tJfonfU7Qc-unsplash.avif"
+                      alt="Portrait Of Phillip Rowe"
+                    />
+                  </div>
+                  <div class="customerDetails">
+                    <p class="name">Phillip Rowe</p>
+                    <p class="profession">Architect</p>
+                  </div>
+                </div>
+                <div class="quoteRight">
+                  <i class="fa-solid fa-quote-right"></i>
+                </div>
+              </div>
+
+              <!-- TESTIMONIAL 3 -->
+              <div class="testimonialCard">
+                <div class="quoteLeft">
+                  <span><i class="fa-solid fa-quote-left"></i></span>
+                </div>
+                <div class="testimonialText">
+                  <p>
+                    Ember & Oak delivered an experience that was both elegant
+                    and comforting. The atmosphere was warm and inviting, the
+                    staff attentive, and the food absolutely divine. Every bite
+                    felt thoughtfully prepared, and the balance of flavors was
+                    remarkable. It’s the kind of place you look forward to
+                    returning to again and again.
+                  </p>
+                </div>
+                <div class="starReview">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half"></i>
+                </div>
+                <div class="customerInfo">
+                  <div class="customerImage">
+                    <img
+                      src="Images/warren-VVEwJJRRHgk-unsplash.avif"
+                      alt="Portrait of Tim Lecuyer"
+                    />
+                  </div>
+                  <div class="customerDetails">
+                    <p class="name">Tim Lecuyer</p>
+                    <p class="profession">Chef</p>
+                  </div>
+                </div>
+                <div class="quoteRight">
+                  <i class="fa-solid fa-quote-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonialNavigation">
+            <button aria-label="Previous testimonial" id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="paginationDots">
+              <button aria-label="Go to testimonial 1" class="dots"></button>
+              <button aria-label="Go to testimonial 2" class="dots"></button>
+              <button aria-label="Go to testimonial 3" class="dots"></button>
+            </div>
+            <button aria-label="Next testimonial" id="nextBtn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contactSection">
+        <div class="contactContainer">
+          <div class="contactTitle">
+            <h3>Get In Touch</h3>
+            <p>
+              Have a question or want to reserve a table? We're always ready to
+              welcome you
+            </p>
+          </div>
+          <div class="contactContent">
+            <div class="contactInformation">
+              <div class="contactCard">
+                <div class="icon">
+                  <img src="Images/map.png" alt="Map Icon" loading="lazy" />
+                </div>
+                <div class="info">
+                  <p>Address</p>
+                  <p>J6WV+4H6, Afao Road, Ado Ekiti 360102, Ekiti</p>
+                </div>
+              </div>
+              <div class="contactCard">
+                <div class="icon">
+                  <img src="Images/smartphone.png" alt="Phone Icon" />
+                </div>
+                <div class="info">
+                  <p>Tel No</p>
+                  <a href="tel:+2347045361243">+234 7045 361 243</a>
+                </div>
+              </div>
+              <div class="contactCard">
+                <div class="icon">
+                  <img src="Images/email.png" alt="Email Icon" />
+                </div>
+                <div class="info">
+                  <p>Email</p>
+                  <a href="mailto:abahdaniel223@gmail.com"
+                    >abahdaniel223@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contactCard">
+                <div class="icon">
+                  <img src="Images/clock.png" alt="Clock Icon" />
+                </div>
+                <div class="info">
+                  <p>Opening Hours</p>
+                  <p>6am - 10pm</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contactMap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.349183646499!2d5.241560474042014!3d7.645548392370523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1047e500756ecbc1%3A0x86718efc9300def0!2sK%26T%20GAT%20OIL%20AND%20GAS%20NIG.%20LTD.!5e0!3m2!1sen!2sng!4v1786119309749!5m2!1sen!2sng"
+                allowfullscreen=""
+                loading="lazy"
+                title="Ember & Oak location map"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footerSection">
+      <div class="footerContainer">
+        <div class="footerContent">
+          <div class="footerInfo">
+            <h5>EMBER & OAK</h5>
+            <p class="footerDescription">
+              Located in Ekiti, we blend warm hospitality with handcrafted
+              flavors. Whether it’s fine dining or casual gatherings, Ember &
+              Oak is where food and family come together.
+            </p>
+          </div>
+          <div class="footerInfo">
+            <h5>QUICK LINKS</h5>
+            <nav class="footerLinks">
+              <ul class="footerList">
+                <li class="arrowRight">
+                  <i class="fa-solid fa-arrow-right"></i><a href="#">Home</a>
+                </li>
+                <li class="arrowRight">
+                  <i class="fa-solid fa-arrow-right"></i><a href="#">Menu</a>
+                </li>
+                <li class="arrowRight">
+                  <i class="fa-solid fa-arrow-right"></i><a href="#">About</a>
+                </li>
+                <li class="arrowRight">
+                  <i class="fa-solid fa-arrow-right"></i><a href="#">Gallery</a>
+                </li>
+                <li class="arrowRight">
+                  <i class="fa-solid fa-arrow-right"></i
+                  ><a href="#">Reservations</a>
+                </li>
+                <li class="arrowRight">
+                  <i class="fa-solid fa-arrow-right"></i><a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footerInfo">
+            <h5>CONTACT</h5>
+            <ul class="footerContact">
+              <li class="contactIcon">
+                <i class="fa-solid fa-map-pin"></i>J6WV+4H6, Afao Road, Ado
+                Ekiti 360102, Ekiti
+              </li>
+              <li class="contactIcon">
+                <i class="fa-solid fa-phone"></i>
+                <div class="tel">
+                  <a href="tel:+2347045361243">07045361243</a>,
+                  <a href="tel:+2349070865352">09070865352</a>
+                </div>
+              </li>
+              <li class="contactIcon">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:abahdaniel223@gmail.com"
+                  >abahdaniel223@gmail.com</a
+                >
+              </li>
+              <li class="contactIcon">
+                <i class="fa-solid fa-clock"></i>6am - 10pm
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <p>&copy; Ember & Oak</p>
+          <div class="footerSocials">
+            <a class="whatsapp" href="https://wa.link/kiapma"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a class="instagram" href="#"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a class="facebook" href="#"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

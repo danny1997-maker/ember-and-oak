@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* ------------ FONT SIZES ------------ */
+  --heading-1: 4rem;
+  --heading-2: 3.375rem;
+  --heading-3: 2.75rem;
+  --heading-4: 2.125rem;
+  --heading-5: 1.5rem;
+  --heading-6: 0.875rem;
+  --paragraph: 1rem;
+  --ui: 1rem;
+
+  /* ------------- LINE HEIGHT -------------  */
+  --lh-heading: 1.2;
+  --lh-paragraph: 1.5;
+  --lh-ui: 1.3;
+
+  /* ------------- LETTER SPACING ------------- */
+  --ls-heading: 0.01em;
+  --ls-paragraph: 0.05em;
+  --ls-ui: 0.04em;
+
+  /* ------------------------------- COLORS ------------------------------ */
+  --pr-color: #7a1f2b;
+  --sc-color: #1f1f1f;
+  --acc-color: #c9a227;
+  --bkcg-color: #f8f5f0;
+  --txt-color: #5a5a5a;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --light-gray-color: #CFCFCF;
+  --bckg-ui: #c9a2;
+
+  /* ------------------ FONT FAMILY ------------------ */
+  --family-heading: "Cormorant Garamond", serif;
+  --family-paragraph: "Inter", sans-serif;
+  --family-ui: "Inter", sans-serif;
+
+  /* ------------------ FONT WEIGHT ------------------  */
+  --weight-heading: 700;
+  --weight-paragraph: 500;
+  --weight-ui: 600;
+
+  /* ---------------- SPACING SYSTEM ----------------- */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 2.5rem;
+  --space-6: 3rem;
+  --space-7: 3.5rem;
+  --space-8: 4rem;
+  /* ----------------- BORDER RADIUS ---------------- */
+  --brd-1: 0.5rem;
+  --brd-2: 0.75rem;
+  --brd-3: 0.875rem;
+  --brd-4: 1.25rem;
+}
+
+body {
+  font-family: var(--family-paragraph);
+  font-size: var(--paragraph);
+  font-weight: var(--weight-paragraph);
+  background-color: var(--bkcg-color);
+  color: var(--txt-color);
+  letter-spacing: var(--ls-paragraph);
+  line-height: var(--lh-paragraph);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--family-heading);
+  letter-spacing: var(--ls-heading);
+  line-height: var(--lh-heading);
+  font-weight: var(--weight-heading);
+  color: inherit;
+}
+
+h1 {
+  font-size: var(--heading-1);
+}
+
+h2 {
+  font-size: var(--heading-2);
+}
+
+h3 {
+  font-size: var(--heading-3);
+}
+
+h4 {
+  font-size: var(--heading-4);
+}
+
+h5 {
+  font-size: var(--heading-5);
+}
+
+h6 {
+  font-size: var(--heading-6);
+}
+
+a {
+  font-size: var(--ui);
+  font-family: var(--family-ui);
+  font-weight: var(--weight-ui);
+  text-decoration: none;
+  line-height: var(--lh-ui);
+  letter-spacing: var(--ls-ui);
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.mainContainer {
+  max-width: 75rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ANIMATIONS */
+
+/* FADE LEFT */
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* FADE UP */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

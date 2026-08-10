@@ -1,0 +1,152 @@
+@media (max-width: 1024px) {
+  html {
+    font-size: 64%;
+  }
+
+  .headerLogo {
+    width: 70px;
+  }
+}
+
+@media (max-width: 920px) {
+  html {
+    font-size: 57.5%;
+  }
+
+  .headerLogo {
+    width: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 48%;
+  }
+
+  .headerLogo {
+    width: 60px;
+  }
+
+  .navLinks {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+    pointer-events: none;
+    position: absolute;
+    visibility: hidden;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+  }
+
+  .navLinks.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .navLinks li {
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
+  }
+
+  .navLinks.active li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navLinks.active li:first-child {
+    transition-delay: 0s;
+  }
+
+  .navLinks.active li:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+
+  .navLinks.active li:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+
+  .navLinks.active li:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+
+  .navLinks.active li:nth-child(5) {
+    transition-delay: 0.4s;
+  }
+
+  .navLinks.active li:last-child {
+    transition-delay: 0.5s;
+  }
+
+  .hamburger {
+    display: flex;
+    padding: 6px 6px;
+  }
+
+  .hamburger span {
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  .hamburger.active span:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .contactInformation {
+    grid-template-columns: 1fr;
+  }
+
+  .contactContent {
+    grid-template-columns: 1fr;
+  }
+
+  .footerContent {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 40.63%;
+  }
+
+  .smallImage img {
+    width: 40%;
+    bottom: -5%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 30%;
+  }
+
+  .headerLogo {
+    width: 50px;
+  }
+}
